@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Demo của Nghé</title>
+<style>
+  :root { --ink:#253050; --violet:#7657e8; --pink:#ff7188; --gold:#ffca5a; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif; color:var(--ink); background:linear-gradient(135deg,#fff0ec,#eef5ff 58%,#f7f0ff); min-height:100vh; }
+  .shell { max-width:900px; margin:auto; padding:32px 22px 60px; }
+  header { text-align:center; margin-bottom:28px; }
+  header .tag { display:inline-block; background:#fff; padding:7px 14px; border-radius:99px; font-weight:700; font-size:13px; box-shadow:0 4px 15px #5d4d9a18; margin-bottom:10px; }
+  h1 { font-size:clamp(26px,5vw,40px); margin:6px 0 10px; letter-spacing:-1px; }
+  header p { color:#5c6485; font-size:16px; max-width:560px; margin:0 auto; line-height:1.5; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:18px; margin-top:28px; }
+  .card { background:#ffffffdf; border:2px solid #fff; box-shadow:0 14px 36px #5d4d9a18; border-radius:24px; padding:22px; display:flex; flex-direction:column; gap:10px; text-decoration:none; color:var(--ink); transition:transform .15s, box-shadow .15s; }
+  .card:hover { transform:translateY(-4px); box-shadow:0 18px 40px #5d4d9a28; }
+  .emoji { font-size:38px; }
+  .card h2 { margin:0; font-size:20px; }
+  .card p { margin:0; font-size:14px; color:#5c6485; line-height:1.5; flex-grow:1; }
+  .btn { display:inline-block; align-self:flex-start; margin-top:6px; padding:10px 16px; border-radius:14px; background:var(--violet); color:#fff; font-weight:800; font-size:14px; }
+  .card.placeholder { border:2px dashed #d9cffb; background:#fbfaff88; align-items:center; justify-content:center; text-align:center; color:#9a8fc4; box-shadow:none; }
+  .card.placeholder:hover { transform:none; }
+  footer { text-align:center; margin-top:40px; font-size:13px; color:#9099b8; }
+</style>
+</head>
+<body>
+  <main class="shell">
+    <header>
+      <span class="tag">✦ Nghé's Demo Corner ✦</span>
+      <h1>Demo của Nghé</h1>
+      <p>Vài sản phẩm nhỏ mình đã tự làm — thử ngay bên dưới, hoặc dùng làm ví dụ khi tự tạo thành phẩm cho riêng bạn.</p>
+    </header>
+    <div class="grid">
+      <a class="card" href="bang-cuu-chuong.html">
+        <div class="emoji">✖️</div>
+        <h2>Nghé học bảng cửu chương</h2>
+        <p>Game học bảng cửu chương từ 1–9 kèm trò chơi toán học phụ trợ, có giọng đọc và hỏi đáp bằng giọng nói.</p>
+        <span class="btn">Chơi thử →</span>
+      </a>
+      <div class="card placeholder">
+        <div>+ Demo mới sẽ được thêm vào đây sớm</div>
+      </div>
+    </div>
+    <footer>Được tạo bởi Nghé · cập nhật thêm demo bất cứ lúc nào</footer>
+  </main>
+</body>
+</html>
